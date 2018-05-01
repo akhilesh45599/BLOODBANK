@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/gradient"
+    android:layout_height="match_parent"
+    tools:context="com.example.nemaliakhilesh.la.OrderBlood">
+
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="439dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="27dp"
+        android:ems="10"
+        android:hint="@string/Name"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="376dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/State"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <EditText
+        android:id="@+id/pincode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="314dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/pincode"
+        android:inputType="number"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/state" />
+
+    <EditText
+        android:id="@+id/vd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="246dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:hint="@string/l"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pincode" />
+
+    <EditText
+        android:id="@+id/hno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="108dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginStart="66dp"
+        android:ems="10"
+        android:hint="@string/hno"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="53dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/mobile"
+        android:inputType="numberPassword"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hno" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="157dp"
+        android:layout_marginStart="139dp"
+        android:text="@string/submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mobile" />
+
+    <Spinner
+        android:id="@+id/bg"
+        android:layout_width="215dp"
+        android:layout_height="29dp"
+        android:layout_marginBottom="36dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/hno"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vd" />
+</android.support.constraint.ConstraintLayout>
